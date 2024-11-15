@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Pet Store</title>
+    <style>
+        /* Reset margins, paddings, and box sizing for consistency */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #FFCCBC;
+            color: #5D4037;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* CTA button styling */
+        .cta-button {
+            text-decoration: none;
+            padding: 0.5rem 1.5rem;
+            background-color: #FF5722;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Section headings */
+        section h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 1.5rem 0;
+            color: #5D4037;
+        }
+
+        /* Flexbox containers for pets and products */
+        .pet-container, .product-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        /* Pet and Product card styles */
+        .pet, .product {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 150px;
+        }
+
+        /* Images within cards */
+        .pet img, .product img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 0.5rem;
+        }
+
+        .pet h3, .product h3 {
+            color: #FF5722;
+            font-size: 1.2rem;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #FFCCBC;
+            color: #5D4037;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #FF5722;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header section with title and CTA button -->
+    <header>
+        <h1>Welcome to Happy Paws Pet Store!</h1>
+        <p>Your one-stop shop for all things pet-related</p>
+        <a href="#shop" class="cta-button">Shop Now</a>
+    </header>
+
+    <!-- Featured Pets Section -->
+    <section id="featured">
+        <h2>Meet Our Featured Pets</h2>
+        <div class="pet-container">
+            <div class="pet">
+                <img src="download.jpeg" alt="Bella the Dog">
+                <h3>Bella</h3>
+                <p>A friendly, playful dog looking for a loving home.</p>
+            </div>
+            <div class="pet">
+                <img src="dof.jpeg" alt="Whiskers the Cat">
+                <h3>Whiskers</h3>
+                <p>A charming cat in need of a forever family.</p>
+            </div>
+            <div class="pet">
+                <img src="rabbit.jpeg" alt="Fluffy the Rabbit">
+                <h3>Fluffy</h3>
+                <p>Adopt this adorable, hoppy rabbit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Products Section -->
+    <section id="shop">
+        <h2>Pet Products</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="food.jpeg" alt="Pet Food">
+                <h3>Pet Food</h3>
+            </div>
+            <div class="product">
+                <img src="toys.jpeg" alt="Pet Toys">
+                <h3>Pet Toys</h3>
+            </div>
+            <div class="product">
+                <img src="bed.jpeg" alt="Pet Bed">
+                <h3>Pet Bed</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Happy Paws Pet Store | <a href="#featured">Featured Pets</a> | <a href="#shop">Shop Products</a></p>
+    </footer>
+
+</body>
+</html>
